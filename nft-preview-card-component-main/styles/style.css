@@ -1,0 +1,128 @@
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --veryDarkbluemainBG: hsl(217, 54%, 11%);
+    --VeryDarkbluecardBG: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --fontParagraph: 1.125rem;
+}
+body {
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+}
+* {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+.card {
+    margin: auto;
+    background-color: var(--VeryDarkbluecardBG);
+    height: 37.5rem; /* 600 px*/
+    width: 21.875rem; /*350px*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 3%;
+    box-shadow: 4px 16px 19px 10px rgba(8, 17, 30, 0.64);
+}
+.first-image {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin-top: 1.875rem;
+    border-radius: 3%;
+    cursor: pointer;
+}
+
+.text {
+    width: 18.75rem;
+    height: 13.4375rem;
+    margin-top: 0.625rem;
+}
+.title {
+    color: white;
+    font-size: var(--fontParagraph);
+    cursor: pointer;
+}
+.title:hover {
+    color: var(--Cyan);
+}
+
+.description {
+    line-height: 1.4;
+    color: var(--Softblue);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+.price-remain {
+    display: flex;
+    align-items: center;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+}
+.price {
+    margin-left: 7px;
+    color: var(--Cyan);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+.days {
+    margin-left: 0.25rem;
+    color: var(--Softblue);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+.clock {
+    position: relative;
+    top: 0.0625rem;
+    margin-right: 3px;
+}
+
+.border {
+    margin: 1.875rem 0;
+    width: 100%;
+    height: 0.0625rem;
+    background-color: var(--Verydarkblueline);
+}
+.end {
+    display: flex;
+    align-items: center;
+    margin-top: 0.9375rem;
+    margin-bottom: 2.3125rem;
+}
+.avatar {
+    height: 1.875rem;
+    width: 1.875rem;
+    margin-right: 1.125rem;
+    border: 0.0625rem solid white;
+    border-radius: 0.9375rem;
+}
+.creation {
+    color: var(--Softblue);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+.jules {
+    margin-left: 0.3125rem;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+.jules:hover {
+    color: var(--Cyan);
+}
+@media (max-width: 37.5rem) {
+    body {
+        display: block;
+        margin-top: 3.75rem;
+    }
+}
