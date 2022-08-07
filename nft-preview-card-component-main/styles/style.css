@@ -6,6 +6,7 @@
     --Verydarkblueline: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
     --fontParagraph: 1.125rem;
+    --cyanHover: hsl(178, 100%, 50%, 0.3);
 }
 body {
     height: 100vh;
@@ -35,6 +36,26 @@ body {
     margin-top: 1.875rem;
     border-radius: 3%;
     cursor: pointer;
+    background: url(../images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.first-image:hover {
+    background: linear-gradient(var(--cyanHover), var(--cyanHover)),
+        url(../images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.first-image:hover::after {
+    content: "";
+    background-image: url(../images/icon-view.svg);
+    height: 2.5rem;
+    width: 2.8125rem;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -47%);
 }
 
 .text {
